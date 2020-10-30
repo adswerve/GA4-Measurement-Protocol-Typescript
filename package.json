@@ -1,0 +1,30 @@
+{
+  "name": "ga4-mp",
+  "version": "1.0.2",
+  "description": "Send data to Google Analytics 4 using Measurement Protocol",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\"\""
+  },
+  "keywords": [
+    "Google",
+    "Analytics",
+    "Measurement",
+    "Protocol",
+    "GA4",
+    "Adswerve"
+  ],
+  "author": "Zach Mitchell",
+  "license": "SEE LICENSE IN GA4-Measurement-Protocol-Typescript/LICENSE",
+  "dependencies": {
+    "@types/node": "^14.14.6",
+    "axios": "^0.21.0",
+    "http": "0.0.1-security"
+  }
+}
