@@ -1,6 +1,6 @@
 {
   "name": "ga4-mp",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Send data to Google Analytics 4 using Measurement Protocol",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
