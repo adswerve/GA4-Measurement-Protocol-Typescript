@@ -19,14 +19,14 @@ analytics-help@adswerve.com
 ## Installation
 
 ```sh
-npm install -s @adswerve/ga4mp
+npm install -s ga4-mp
 ```
 
 ## Setup
 
 ```js
-ga4mp = require('@adswerve/ga4mp');
-let ga4conn = ga4mp.createClient(apiSecret, measurementId, clientId);
+ga4mp = require('ga4-mp');
+let ga4 = ga4mp.createClient(apiSecret, measurementId, clientId);
 ```
 
 ## Send Hits to GA4 Account
@@ -36,14 +36,14 @@ You can send events to GA4 as they happen or batch them to be sent at another ti
 ### Send immediately
 
 ```js
-ga4conn.send(<events>);
+ga4.send(<events>);
 ```
 
 ### Send later
 
 ```js
-ga4conn.send(<events>, true); // Set postpone flag
-ga4conn.flushBuffer();  // Send all postponed events
+ga4.send(<events>, true); // Set postpone flag
+ga4.flushBuffer();  // Send all postponed events
 ```
 
 ### Events passed to send()
@@ -74,8 +74,8 @@ Events are expected to be passed to the send() function within an array and matc
 ### Set and unset a constant parameter
 
 ```js
-ga4conn.setConstantParam(key, value);  // Set a constant
-ga4conn.unsetConstantParam(key); // Remove a constant
+ga4.setConstantParam(key, value);  // Set a constant
+ga4.unsetConstantParam(key); // Remove a constant
 ```
 
 Set custom dimensions/metrics, country codes, etc. for all outgoing events.  You can unset them too.
@@ -83,5 +83,5 @@ Set custom dimensions/metrics, country codes, etc. for all outgoing events.  You
 ### Output connection details
 
 ```js
-ga4conn.readClientInfo();
+ga4.readClientInfo();
 ```

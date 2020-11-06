@@ -1,6 +1,6 @@
 {
-  "name": "@adswerve/ga4mp",
-  "version": "1.0.0",
+  "name": "ga4-mp",
+  "version": "1.0.3",
   "description": "Send data to Google Analytics 4 using Measurement Protocol",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,5 +26,6 @@
     "@types/node": "^14.14.6",
     "axios": "^0.21.0",
     "http": "0.0.1-security"
-  }
+  },
+  "devDependencies": {}
 }
