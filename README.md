@@ -29,6 +29,15 @@ ga4mp = require('ga4-mp');
 let ga4 = ga4mp.createClient(apiSecret, measurementId, clientId);
 ```
 
+The required credentials for sending events to GA4 are made up by the following:
+
+|Credential|Description|
+|---|---|
+|measurement_id|The identifier for a Data Stream. Found in the Google Analytics UI under:  **Admin** > **Data Streams** > **choose your stream** > **Measurement ID**|
+|api_secret|Generated throught the Google Analytics UI. To create a new secret, navigate in the Google Analytics UI to: **Admin** > **Data Streams** > **choose your stream** > **Measurement Protocol** > **Create**|
+|client_id|[Get your Google API client ID](https://developers.google.com/identity/one-tap/web/guides/get-google-api-clientid)|
+
+
 ## Send Hits to GA4 Account
 
 You can send events to GA4 as they happen or batch them to be sent at another time of your choosing.
